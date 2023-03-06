@@ -76,9 +76,9 @@ footer a {
 }
 
 .button-top-right {
-  border-radius: 100% 0 0 0;
+  border-radius: 0 100% 0 0;
   box-shadow: 0 0 5px 2px rgb(69, 69, 69);
-  margin: 20px 0 0 20px;
+  margin: 20px 20px 0 0;
   background-size: 5px 5px;
   background-color: red;
   background-image: linear-gradient(
@@ -90,9 +90,9 @@ footer a {
 }
 
 .button-top-left {
-  border-radius: 0 100% 0 0;
+  border-radius: 100% 0 0 0;
   box-shadow: 0 0 5px 2px rgb(69, 69, 69);
-  margin: 20px 20px 0 0;
+  margin: 20px 0 0 20px;
   background-size: 5px 5px;
   background-color: green;
   background-image: linear-gradient(45deg, rgb(0, 82, 27) 65%, transparent 45%);
@@ -100,9 +100,9 @@ footer a {
 }
 
 .button-bottom-right {
-  border-radius: 0 0 0 100%;
+  border-radius: 0 0 100% 0;
   box-shadow: 0 0 5px 2px rgb(69, 69, 69);
-  margin: 0 0 20px 20px;
+  margin: 0 20px 20px 0;
   background-size: 5px 5px;
   background-color: blue;
   background-image: linear-gradient(45deg, rgb(3, 0, 163) 65%, transparent 45%);
@@ -110,9 +110,9 @@ footer a {
 }
 
 .button-bottom-left {
-  border-radius: 0 0 100% 0;
+  border-radius: 0 0 0 100%;
   box-shadow: 0 0 5px 2px rgb(69, 69, 69);
-  margin: 0 20px 20px 0;
+  margin: 0 0 20px 20px;
   background-size: 5px 5px;
   background-color: yellow;
   background-image: linear-gradient(
