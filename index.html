@@ -2,14 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- Tell browsers not to scale the viewport automatically -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simon</title>
     <link rel="icon" href="favicon.ico" />
 
+    <script src="login.js"></script>
     <link rel="stylesheet" href="main.css" />
 
-    <!-- Include bootstrap CSS framework -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -40,12 +39,12 @@
 
     <main class="container-fluid bg-secondary text-center">
       <div>
-        <h2>Welcome to Simon</h2>
-        <p>Enter Player Name Here</p>
-        <form method="get" action="play.html">
+        <h1>Welcome</h1>
+        <p>Login to play</p>
+        <div>
           <input type="text" id="name" placeholder="Your name here" />
-          <button class = "loginbutton">Login</b>
-        </form>
+          <button class="loginbutton" onclick="login()">Login</button>
+        </div>
       </div>
     </main>
 

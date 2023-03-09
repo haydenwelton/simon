@@ -75,10 +75,10 @@ footer a {
   gap: 7px;
 }
 
-.button-top-left {
-  border-radius: 100% 0 0 0;
+.button-top-right {
+  border-radius: 0 100% 0 0;
   box-shadow: 0 0 5px 2px rgb(69, 69, 69);
-  margin: 20px 0 0 20px;
+  margin: 20px 20px 0 0;
   background-size: 5px 5px;
   background-color: red;
   background-image: linear-gradient(
@@ -89,30 +89,30 @@ footer a {
   border: thick solid rgb(128, 13, 3);
 }
 
-.button-top-right {
-  border-radius: 0 100% 0 0;
+.button-top-left {
+  border-radius: 100% 0 0 0;
   box-shadow: 0 0 5px 2px rgb(69, 69, 69);
-  margin: 20px 20px 0 0;
+  margin: 20px 0 0 20px;
   background-size: 5px 5px;
   background-color: green;
   background-image: linear-gradient(45deg, rgb(0, 82, 27) 65%, transparent 45%);
   border: thick solid rgb(0, 82, 27);
 }
 
-.button-bottom-left {
-  border-radius: 0 0 0 100%;
+.button-bottom-right {
+  border-radius: 0 0 100% 0;
   box-shadow: 0 0 5px 2px rgb(69, 69, 69);
-  margin: 0 0 20px 20px;
+  margin: 0 20px 20px 0;
   background-size: 5px 5px;
   background-color: blue;
   background-image: linear-gradient(45deg, rgb(3, 0, 163) 65%, transparent 45%);
   border: thick solid rgb(3, 0, 163);
 }
 
-.button-bottom-right {
-  border-radius: 0 0 100% 0;
+.button-bottom-left {
+  border-radius: 0 0 0 100%;
   box-shadow: 0 0 5px 2px rgb(69, 69, 69);
-  margin: 0 20px 20px 0;
+  margin: 0 0 20px 20px;
   background-size: 5px 5px;
   background-color: yellow;
   background-image: linear-gradient(
@@ -178,7 +178,6 @@ footer a {
     flex: 1 100vh;
   }
 }
-
 .resetbutton {
   color: red;
   font-weight: bold;
@@ -192,3 +191,4 @@ footer a {
   background-image: linear-gradient(180deg, white 1%, transparent 100%);
   border-radius: 50%;
 }
+
