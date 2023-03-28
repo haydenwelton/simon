@@ -23,18 +23,16 @@ footer {
 menu {
   flex: 1;
   display: flex;
-  /*  overwrite Bootstrap so the menu does not wrap */
   flex-direction: row !important;
   list-style: none;
 }
 
 .navbar-brand {
-  padding-left: 0.3em;
-  border-bottom: solid rgb(182, 182, 182) thin;
+  padding-left: 1em;
 }
 
 menu .nav-item {
-  padding: 0 0.3em;
+  padding: 0 0.5em;
 }
 
 footer a {
@@ -52,18 +50,19 @@ footer a {
 }
 
 .player-name {
-  color: rgb(118, 190, 210);
+  color: rgb(50, 50, 210);
 }
 
 .game {
-  background: rgb(0, 0, 0);
-  border-radius: 50%;
+  background: rgb(98, 129, 161);
+  background-image: linear-gradient(180deg, white 1%, transparent 100%);
+  border-radius: 100%;
   box-shadow: 0 0 20px 5px rgb(69, 69, 69);
-  width: 80vw;
-  height: 80vw;
+  width: 100vw;
+  height: 100vw;
   position: absolute;
-  min-width: 300px;
-  min-height: 300px;
+  min-width: 350px;
+  min-height: 350px;
   max-width: min(80vmin, 1000px);
   max-height: min(80vmin, 1000px);
 }
@@ -73,54 +72,78 @@ footer a {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.button-top-left {
-  border-radius: 100% 0 0 0;
-  margin: 20px 0 0 20px;
-  background-color: green;
-  border: thick solid rgb(36, 53, 0);
+  gap: 7px;
 }
 
 .button-top-right {
   border-radius: 0 100% 0 0;
+  box-shadow: 0 0 5px 2px rgb(69, 69, 69);
   margin: 20px 20px 0 0;
+  background-size: 5px 5px;
   background-color: red;
-  border: thick solid rgb(83, 12, 12);
+  background-image: linear-gradient(
+    45deg,
+    rgb(128, 13, 3) 65%,
+    transparent 45%
+  );
+  border: thick solid rgb(128, 13, 3);
 }
 
-.button-bottom-left {
-  border-radius: 0 0 0 100%;
-  margin: 0 0 20px 20px;
-  background-color: yellow;
-  border: thick solid rgb(94, 90, 10);
+.button-top-left {
+  border-radius: 100% 0 0 0;
+  box-shadow: 0 0 5px 2px rgb(69, 69, 69);
+  margin: 20px 0 0 20px;
+  background-size: 5px 5px;
+  background-color: green;
+  background-image: linear-gradient(45deg, rgb(0, 82, 27) 65%, transparent 45%);
+  border: thick solid rgb(0, 82, 27);
 }
 
 .button-bottom-right {
   border-radius: 0 0 100% 0;
+  box-shadow: 0 0 5px 2px rgb(69, 69, 69);
   margin: 0 20px 20px 0;
+  background-size: 5px 5px;
   background-color: blue;
-  border: thick solid rgb(27, 14, 100);
+  background-image: linear-gradient(45deg, rgb(3, 0, 163) 65%, transparent 45%);
+  border: thick solid rgb(3, 0, 163);
+}
+
+.button-bottom-left {
+  border-radius: 0 0 0 100%;
+  box-shadow: 0 0 5px 2px rgb(69, 69, 69);
+  margin: 0 0 20px 20px;
+  background-size: 5px 5px;
+  background-color: yellow;
+  background-image: linear-gradient(
+    45deg,
+    rgb(209, 202, 0) 65%,
+    transparent 45%
+  );
+  border: thick solid rgb(209, 202, 0);
 }
 
 .controls {
   position: absolute;
+  box-shadow: 0 0 5px 2px rgb(69, 69, 69);
+  background-image: linear-gradient(180deg, white 1%, transparent 100%);
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  background-color: black;
-  padding: 2em;
+  width: 175px;
+  height: 175px;
+  background-color: rgb(98, 129, 161);
+  padding: 1em;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Merriweather:700|Roboto');
+
 .game-name {
+  font-family: "Righteous";
   font-size: 2em;
-  font-weight: bold;
-  margin-bottom: 0.5em;
+  color: rgb(43, 43, 43);
 }
 
 .score {
@@ -129,20 +152,13 @@ footer a {
   font-size: 20px;
   font-family: monospace;
   font-weight: bold;
-  color: red;
+  color: green;
   cursor: default;
   width: 50px;
   height: 30px;
   border-radius: 10px;
-  border: solid thin rgb(117, 0, 0);
-  background-color: #300;
-}
-
-td {
-  max-width: 40vw;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  border: solid gray;
+  background-color: black;
 }
 
 .center {
@@ -162,3 +178,17 @@ td {
     flex: 1 100vh;
   }
 }
+.resetbutton {
+  color: red;
+  font-weight: bold;
+  background-image: linear-gradient(180deg, white 1%, transparent 100%);
+  border-radius: 50%;
+}
+
+.loginbutton {
+    color: blue;
+  font-weight: bold;
+  background-image: linear-gradient(180deg, white 1%, transparent 100%);
+  border-radius: 50%;
+}
+
