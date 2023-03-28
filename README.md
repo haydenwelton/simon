@@ -10,3 +10,5 @@ I learned that Javascript is not as hard to approach as I thought it would be, e
 
 Something I learned more about during this assingment is how Node.js is working. I sound like a broken record by this point, but I loved in the case with this code how easy it was to deploy all of my files as a services and store names in the database because I had to do it a different way when I was working over the summer at a tech internship where I had to use Apple Cloud and SwiftUI and I didn't really understand what it was doing, but for this it made more sense for what the service actually is
 
+Something I learned about this assigment is the ins and outs of connecting a service to the database. I had a lot of problems with connecting my database at first because I wasn't allowing the right IP's to connect in so I learned a lot about how to pay attention to detail and the consequences of not allowing the right ips to be able to access the database. I also learned how to organize incoming data from a program and I thought it was super interesting how MongoDB and other databases for that better knows how to separate incoming data to collections and organizes very cleanly
+
